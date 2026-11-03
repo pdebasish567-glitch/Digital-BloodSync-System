@@ -1,0 +1,165 @@
+.donor-form-card {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  font-family: inherit;
+}
+
+.donor-form-header h2 {
+  margin-bottom: 0.5rem;
+  color: #1e293b;
+}
+
+.donor-form-header p {
+  color: #64748b;
+  margin-bottom: 1.5rem;
+}
+
+.form-section-header {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #0f172a;
+  margin: 1.5rem 0 1rem 0;
+  padding-bottom: 0.3rem;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1rem;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field.full-width {
+  grid-column: 1 / -1;
+}
+
+.form-field label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #334155;
+  margin-bottom: 0.4rem;
+}
+
+.form-field input,
+.form-field select {
+  padding: 0.75rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.form-field input:focus,
+.form-field select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.checkbox-field {
+  flex-direction: row;
+  align-items: center;
+  gap: 0.75rem;
+  background: #f8fafc;
+  padding: 0.75rem;
+  border-radius: 6px;
+  border: 1px solid #e2e8f0;
+}
+
+.checkbox-field input {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.checkbox-field label {
+  margin-bottom: 0;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.error-text {
+  color: #dc2626;
+  font-size: 0.75rem;
+  margin-top: 0.3rem;
+}
+
+.block-error {
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.age-badge {
+  color: #16a34a;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-top: 0.3rem;
+}
+
+.btn-gps {
+  background: #0284c7;
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-gps:hover {
+  background: #0369a1;
+}
+
+.btn-gps:disabled {
+  background: #94a3b8;
+  cursor: not-allowed;
+}
+
+.map-preview-container {
+  margin-top: 1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #f8fafc;
+}
+
+.map-preview-header {
+  padding: 0.5rem 0.75rem;
+  background: #e2e8f0;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #334155;
+}
+
+.btn-submit {
+  width: 100%;
+  margin-top: 2rem;
+  background: #16a34a;
+  color: white;
+  border: none;
+  padding: 0.85rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-submit:hover {
+  background: #15803d;
+}
+
+.btn-submit:disabled {
+  background: #94a3b8;
+  cursor: not-allowed;
+}
